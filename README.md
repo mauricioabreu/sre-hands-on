@@ -12,8 +12,8 @@ go run main.go
 
 Our app has only three features:
 
-* Retrieving todos (GET)
-* Creating (POST)
-* Removing a todo (DELETE)
+* Reading todos (GET)
+* Creating a todo (POST)
+* Deleting a todo (DELETE)
 
 The _sample.http_ file describes some examples of requests that can be performed.
