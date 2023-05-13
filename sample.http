@@ -1,0 +1,17 @@
+### Variables
+@apiUrl = http://localhost:1323
+
+### GET todos
+GET {{apiUrl}}/todos HTTP/1.1
+
+### POST todos
+POST {{apiUrl}}/todos HTTP/1.1
+Content-Type: application/json
+
+{
+    "description": "Buy {{$randomInt 2 100}} bottles of wine",
+    "done": false
+}
+
+### DELETE todos
+DELETE {{apiUrl}}/todos/1 HTTP/1.1
