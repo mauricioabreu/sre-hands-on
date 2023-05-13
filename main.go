@@ -3,6 +3,7 @@ package main
 import (
 	"net/http"
 
+	"github.com/labstack/echo-contrib/prometheus"
 	"github.com/labstack/echo/v4"
 	"gorm.io/driver/sqlite"
 	"gorm.io/gorm"
@@ -10,6 +11,8 @@ import (
 
 func main() {
 	e := echo.New()
+	p := prometheus.NewPrometheus("", nil)
+	p.Use(e)
 
 	db, err := gorm.Open(sqlite.Open("file::memory:?cache=shared"), &gorm.Config{})
 	if err != nil {
