@@ -1,4 +1,4 @@
-# SRE App
+# SRE Hands On
 
 App created to demonstrate in practice some concepts of Site Reliability Engineering.
 
@@ -17,3 +17,11 @@ Our app has only three features:
 * Deleting a todo (DELETE)
 
 The _sample.http_ file describes some examples of requests that can be performed.
+
+## Performance
+
+Observing how a system performs is not something new, but it changed drastically over the years.
+
+I remember the time we had no idea if a system was running under good conditions. How did we know something was failing? We didn't. Customers used to be our alert system. If everything was silent, it was a sign that everything was working fine. Otherwise, customers would be flooding the project manager's inbox. At that time, we had scripts reading the last lines of log files looking for words like "ERROR", "Exception" and so on.
+
+Nowadays, we have plenty of tools and patterns to parse, collect and use all the information we can extract from systems.
