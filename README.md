@@ -34,6 +34,6 @@ If a GET request to `/todos` works, it is available. Does it mean that the appli
 
 Availability if often measured by using the following formula:
 
-$ successful requests / (successful requests + failed requests)$
+successful requests / (successful requests + failed requests)
 
 The result is a percentage.
