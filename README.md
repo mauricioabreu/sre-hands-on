@@ -16,8 +16,6 @@ Our app has only three features:
 * Creating a todo (POST)
 * Deleting a todo (DELETE)
 
-The _sample.http_ file describes some examples of requests that can be performed.
-
 ## Performance
 
 Observing how a system performs is not something new, but it changed drastically over the years.
@@ -27,3 +25,15 @@ I remember the time we had no idea if a system was running under good conditions
 Nowadays, we have plenty of tools and strategies to parse, collect and use all the information we can extract from systems. This wide and diverse range of tools may confuse even experiencied developers. What tools do we need? Which metrics we must collect? Will these numbers show how buggy is my code?
 
 If you are working in a healthy environment, you should not worry whether these numbers will impact your reasoning about your team's code quality. Measuring should serve for one thing only: understanding systems. And when I say _understand_, I'm talking about awaraness. We should not need to keep eyes on log parsers, charts or email inbox to check if all systems are up and running. Our job, as developers, is to automate these processes.
+
+### Availability
+
+**Availability** is the word used to define whether a system is able to complete a request from a client. We use the word _client_ because we don't care whether the request comes from humans or tools.
+
+If a GET request to `/todos` works, it is available. Does it mean that the application is available?
+
+Availability if often measured by using the following formula:
+
+$ successful requests / (successful requests + failed requests)$
+
+The result is a percentage.
