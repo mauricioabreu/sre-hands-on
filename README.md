@@ -36,8 +36,6 @@ Availability if often measured by using the following formula:
 
 $sucessful / (successful + failed)$
 
-The result is a percentage like 99,9%.
-
 Let's check some examples:
 
 * Our app receives *1000* requests in the past minute.
