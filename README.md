@@ -40,7 +40,7 @@ The result is a percentage like 99,9%.
 
 Let's check some examples:
 
-* Our `/todos` route receives *1000* requests in the past minute.
+* Our app receives *1000* requests in the past minute.
 * 100 out of 1000 requests fail
 * 900 / (900 + 100) = 0.9
-* We have 90% of availability
+* Our app has 90% of availability
