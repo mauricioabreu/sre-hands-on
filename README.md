@@ -30,10 +30,17 @@ If you are working in a healthy environment, you should not worry whether these 
 
 **Availability** is the word used to define whether a system is able to complete a request from a client. We use the word _client_ because we don't care whether the request comes from humans or tools.
 
-If a GET request to `/todos` works, it is available. Does it mean that the application is available?
+If a GET request to `/todos` route works, it means the route works and the requests completes. Does it mean that the application is available?
 
 Availability if often measured by using the following formula:
 
-successful requests / (successful requests + failed requests)
+$sucessful / (successful + failed)$
 
-The result is a percentage.
+The result is a percentage like 99,9%.
+
+Let's check some examples:
+
+* Our `/todos` route receives *1000* requests in the past minute.
+* 100 out of 1000 requests fail
+* 900 / (900 + 100) = 0.9
+* We have 90% of availability
