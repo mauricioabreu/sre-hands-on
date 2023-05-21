@@ -31,4 +31,6 @@ Let's check some examples:
 
 ### Latency
 
-**Latency** measure how long a request takes to complete.
+**Latency** measures how long a request takes to complete. How long does it take to process a job.
+
+We use latency to measure the overall user experience.
