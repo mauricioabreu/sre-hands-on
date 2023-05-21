@@ -2,20 +2,6 @@
 
 This tutorials is a hands on to [Site Reliability Engineering](https://en.wikipedia.org/wiki/Site_reliability_engineering).
 
-## Running
-
-```
-go run main.go
-```
-
-## Routes
-
-Our app has only three features:
-
-* Reading todos (GET)
-* Creating a todo (POST)
-* Deleting a todo (DELETE)
-
 ## Performance
 
 Observing how a system performs is not something new, but it changed drastically over the years.
@@ -41,4 +27,8 @@ Let's check some examples:
 * Our app receives *1000* requests in the past minute.
 * 100 out of 1000 requests fail
 * 900 / (900 + 100) = 0.9
-* Our app has 90% of availability
+* Our app has **90% of availability**
+
+### Latency
+
+**Latency** measure how long a request takes to complete.
