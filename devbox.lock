@@ -1,11 +1,17 @@
 {
   "lockfile_version": "1",
   "packages": {
+    "gcc": {
+      "resolved": "github:NixOS/nixpkgs/f80ac848e3d6f0c12c52758c0f25c10c97ca3b62#gcc"
+    },
     "go_1_20": {
       "resolved": "github:NixOS/nixpkgs/f80ac848e3d6f0c12c52758c0f25c10c97ca3b62#go_1_20"
     },
     "prometheus": {
       "resolved": "github:NixOS/nixpkgs/f80ac848e3d6f0c12c52758c0f25c10c97ca3b62#prometheus"
+    },
+    "sqlite": {
+      "resolved": "github:NixOS/nixpkgs/f80ac848e3d6f0c12c52758c0f25c10c97ca3b62#sqlite"
     }
   }
 }
