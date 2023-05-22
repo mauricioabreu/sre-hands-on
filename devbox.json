@@ -8,7 +8,8 @@
   "shell": {
     "init_hook": null,
     "scripts": {
-      "start_prometheus": "prometheus"
+      "start_prometheus": "prometheus",
+      "reload_prometheus": "kill -HUP $(pgrep prometheus)"
     }
   },
   "nixpkgs": {
