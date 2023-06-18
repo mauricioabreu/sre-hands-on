@@ -61,4 +61,4 @@ The _Just Code_ company launches a fresh new app. On the first day, it only has 
 
 Why do you think they are not as cheap as some people might wonder?
 
-One of the best ways to collect latency metrics without sacrificing too much information and paying less for it is by storing the information in buckets and calculating percentiles of latency."
+One of the best ways to collect latency metrics without sacrificing too much information and paying less for it is by storing the information in buckets and calculating percentiles of latency.
