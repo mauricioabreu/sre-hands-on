@@ -2,19 +2,19 @@
 
 This tutorials is a hands on to [Site Reliability Engineering](https://en.wikipedia.org/wiki/Site_reliability_engineering).
 
-First, we will focus on learning some basic aspects of SRE. Then, we will learn to collect SLI (Service Level Indicators) and define SLOs (Service Level Objectives).
+First, we will focus on learning some basic aspects of SRE. Then, we will learn how to collect **Service Level Indicators (SLIs)** and define **Service Level Objectives (SLOs)**.
 
-If you wish to learn more about the teory behind SRE I recommend you to read the [SRE Workbook from Google](https://sre.google/workbook/table-of-contents/)
+If you wish to learn more about the teory behind SRE, I recommend you read the [SRE Workbook from Google](https://sre.google/workbook/table-of-contents/)
 
 ## Performance
 
-Observing how a system performs is not something new, but it changed drastically over the years.
+Observing how a system performs has drastically changed over the years.
 
-I remember the time we had no idea if a system was running under good conditions. How did we know something was failing? We didn't. Customers used to be our alert system. If everything was silent, it was a sign that everything was working fine. Otherwise, customers would be flooding the project manager's inbox. At that time, we had scripts reading the last lines of log files looking for words like _ERROR_, _Exception_ and so on.
+I remember a time when we had no idea if a system was running under good conditions. How did we know if something was failing? We didn't. Customers used to be our alert system. If everything was silent, it was a sign that everything was working fine. Otherwise, customers would flood the project manager's inbox. At that time, we had scripts reading the last lines of log files looking for words like _ERROR_ and _Exception_.
 
-Nowadays, we have plenty of tools and strategies to **parse**, **collect** and **analyze** all the information we can extract from systems. This wide and diverse range of tools may confuse even experiencied developers. What tools do we need? Which metrics we must collect? Will these numbers show how buggy is my code?
+Nowadays, we have plenty of tools and strategies to **parse**, **collect**, and **analyze** all the information we can extract from systems. This wide and diverse range of tools may confuse even experienced developers. Which tools do we need? Which metrics must we collect? Will these numbers show how buggy my code is?
 
-If you are working in a healthy environment, you should not worry whether these numbers will impact your reasoning about your team's code quality. Measuring should serve for one thing only: understanding systems. And when I say _understand_, I'm talking about awaraness. We should not need to keep eyes on log parsers, charts or email inbox to check if all systems are up and running. Our job, as developers, is to automate these processes.
+If you are working in a healthy environment, you should not worry about whether these numbers will impact your reasoning about your team's code quality. Measuring should serve one purpose only: _understanding_ systems. And when I say understand, I'm talking about awareness. We should not need to keep our eyes on log parsers, charts, or email inboxes to check if all systems are up and running. Our job, as developers, is to automate these processes.
 
 ## Understanding SLOs and SLIs
 
@@ -23,13 +23,13 @@ If you are working in a healthy environment, you should not worry whether these 
 **SLOs** define the acceptable levels of performance or reliability based on SLIs.
 
 SLOs are a tool to:
-* Help you deciding what are the next steps on evolving your systems
-* What parts of the system need more caring
-* Negotiate improvements with stakeholders
+* Help you decide what the next steps are in evolving your systems
+* Identify which parts of the system need more attention
+* Negotiate future improvements with stakeholders
 
-All of this driven by data.
+All of this is driven by data.
 
-A Service Level Objective is a *target* and as such it must be designed and defined with all the people who are responsible for the target, from the infrastructure teams to stakeholders. It is an important commitment and transparency is mandatory.
+A Service Level Objective is a _target_, and as such, it must be designed and defined with all the people responsible for the target, from the infrastructure teams to stakeholders. It is an important commitment, and transparency is mandatory.
 
 ### Availability
 
