@@ -42,10 +42,10 @@ Availability is often measured using the following formula:
 $successful / (successful + failed)$
 
 Let's check some examples:
-* Our app received *1000* requests in the past minute.
-* *100* out of 1000 requests failed.
-* 900 / (900 + 100) = 0.9
-* Our app has 90% availability.
+* Our app received *1000* requests in the past minute
+* *100* out of 1000 requests failed
+* 900 / (900 + 100) = 0.
+* Our app has 90% availability
 
 ### Latency
 
