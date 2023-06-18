@@ -27,6 +27,8 @@ SLOs are a tool to:
 
 All of this driven by data.
 
+A Service Level Objective is a *target* and as such it must be designed and defined with all the people who are responsible for the target, from the infrastructure teams to stakeholders. It is an important commitment and transparency is mandatory.
+
 ### Availability
 
 **Availability** is the word used to define whether a system is able to complete a request from a client. We use the word _client_ because we don't care whether the request comes from humans or tools.
