@@ -35,18 +35,17 @@ A Service Level Objective is a _target_, and as such, it must be designed and de
 
 **Availability** is the word used to define whether a system is able to complete a request from a client. We use the word _client_ because we don't care whether the request comes from humans or tools.
 
-If a GET request to `/todos` route works, it means the route works and the requests completes. Does it mean that the application is available?
+If a GET request to the `/todos` route works, it means the route works, and the request completes. But does it mean that the application is available?
 
-Availability if often measured by using the following formula:
+Availability is often measured using the following formula:
 
-$sucessful / (successful + failed)$
+$successful / (successful + failed)$
 
 Let's check some examples:
-
-* Our app receives *1000* requests in the past minute.
-* 100 out of 1000 requests fail
+* Our app received *1000* requests in the past minute.
+* *100* out of 1000 requests failed.
 * 900 / (900 + 100) = 0.9
-* Our app has **90% of availability**
+* Our app has 90% availability.
 
 ### Latency
 
@@ -54,6 +53,6 @@ Let's check some examples:
 
 We use latency to measure the overall user experience.
 
-Slow responses will force users to leave our websites. And we don't want it. Availability is important. We wish our applications responding **HTTP 200 OK** but a good status can't come with a high latency. We don't want our applications responding fast **HTTP 5xx** errors in the same way we don't want **HTTP 2xx** taking 10 second to complete. Keep in mind that slow errors are even worse than fast errors.
+Slow responses will force users to leave our websites, and that's something we don't want. Availability is important. We want our applications to respond with **HTTP 200 OK**, but a good status can't come with high latency. We don't want our applications to respond fast with **HTTP 5xx errors**, just as we don't want **HTTP 2xx** responses taking 10 seconds to complete. Keep in mind that slow errors are even worse than fast errors.
 
-Measuring latency is a real challenge. At a first glance, a good idea would be store every single response time, and then calculate the average time of all the requests. It turns out that it is not a good idea. Let's take a closer look on the following example:
+Measuring latency is a real challenge. At first glance, it may seem like a good idea to store every single response time and then calculate the average time of all the requests. However, it turns out that this is not a good idea. Let's take a closer look at the following example:
