@@ -4,6 +4,8 @@ This tutorials is a hands on to [Site Reliability Engineering](https://en.wikipe
 
 First, we will focus on learning some basic aspects of SRE. Then, we will learn to collect SLI (Service Level Indicators) and define SLOs (Service Level Objectives).
 
+If you wish to learn more about the teory behind SRE I recommend you to read the [SRE Workbook from Google](https://sre.google/workbook/table-of-contents/)
+
 ## Performance
 
 Observing how a system performs is not something new, but it changed drastically over the years.
