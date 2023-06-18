@@ -56,3 +56,9 @@ We use latency to measure the overall user experience.
 Slow responses will force users to leave our websites, and that's something we don't want. Availability is important. We want our applications to respond with **HTTP 200 OK**, but a good status can't come with high latency. We don't want our applications to respond fast with **HTTP 5xx errors**, just as we don't want **HTTP 2xx** responses taking 10 seconds to complete. Keep in mind that slow errors are even worse than fast errors.
 
 Measuring latency is a real challenge. At first glance, it may seem like a good idea to store every single response time and then calculate the average time of all the requests. However, it turns out that this is not a good idea. Let's take a closer look at the following example:
+
+The _Just Code_ company launches a fresh new app. On the first day, it only has a few users navigating the site. Upset about the poor numbers, the marketing team decides to invest in advertising. And then, like magic, the app starts to receive a tremendous amount of requests. A month later, the CTO becomes concerned about the costs in the cloud. All the metrics are working fine, but they seem to be very expensive.
+
+Why do you think they are not as cheap as some people might wonder?
+
+One of the best ways to collect latency metrics without sacrificing too much information and paying less for it is by storing the information in buckets and calculating percentiles of latency."
