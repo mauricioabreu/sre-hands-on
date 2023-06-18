@@ -17,7 +17,15 @@ If you are working in a healthy environment, you should not worry whether these 
 ## Understanding SLOs and SLIs
 
 **SLIs** are metrics that quantify the performance and behavior of your system or service.
+
 **SLOs** define the acceptable levels of performance or reliability based on SLIs.
+
+SLOs are a tool to:
+* Help you deciding what are the next steps on evolving your systems
+* What parts of the system need more caring
+* Negotiate improvements with stakeholders
+
+All of this driven by data.
 
 ### Availability
 
