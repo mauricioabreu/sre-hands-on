@@ -3,13 +3,17 @@
     "go_1_20",
     "prometheus",
     "gcc",
-    "sqlite"
+    "sqlite",
+    "grafana@latest"
   ],
+  "env": {
+    "GF_PATHS_DATA": "$PWD/data"
+  },
   "shell": {
-    "init_hook": null,
     "scripts": {
+      "reload_prometheus": "kill -HUP $(pgrep prometheus)",
       "start_prometheus": "prometheus",
-      "reload_prometheus": "kill -HUP $(pgrep prometheus)"
+      "start_grafana": "grafana-server --homepath .devbox/virtenv/.wrappers/share/grafana --config grafana.ini"
     }
   },
   "nixpkgs": {
